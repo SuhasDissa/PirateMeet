@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.padding {
+    width: 100%;
+    height: 80%;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: red;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+#videolist {
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 4fr));
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+body {
+    background-color: #EDF2F6;
+}
+
+video {
+    border-radius: 20px;
+    background-color: #ffffff;
+    transition-duration: 200ms;
+    /*box-shadow: 0 0.125rem 1.25rem 1em rgb(0 0 0 / 8%);*/
+}
+
+.paddingDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a,
+button {
+    font-family: "Comfortaa", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(255, 125, 45);
+    background: linear-gradient(302deg, rgba(255, 125, 45, 1) 0%, rgba(255, 44, 176, 1) 100%);
+    transition-duration: 200ms;
+}
+
+input {
+    font-family: "Comfortaa", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 20px;
+    color: #FF30AA;
+    border: 2px solid rgb(255, 125, 45);
+    background-color: white;
+}
+
+#title {
+    font-family: "Comfortaa", sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    padding: 20px;
+    color: #FF30AA;
+}
+
+button:hover,
+a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.125rem 1.25rem 1em rgb(0 0 0 / 8%);
+}

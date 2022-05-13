@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Video App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="paddingDiv">
+        <div class="container">
+            <input placeholder="Enter Meeting ID" name="id" id="meetinId">
+            <button onclick="Join()">Join Meeting</button>
+            <hr>
+            <a href="/new">Start New Meeting</a>
+        </div>
+    </div>
+    <script>
+        const input = document.getElementById("meetinId");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                Join()
+            }
+        });
+
+        function Join() {
+            var meetingID = input.value;
+            document.location.href = "/" + meetingID;
+        }
+    </script>
+</body>
+
+</html>
