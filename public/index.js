@@ -24,7 +24,7 @@ navigator.mediaDevices.getUserMedia({
         })
         call.on("close", () => {
             console.log(vid);
-            vid.parentElement.remove();
+            vid.remove();
         })
         peerConnections[call.peer] = call;
     })
@@ -49,7 +49,7 @@ socket.on('userJoined', id => {
         addVideo(vid, userStream);
     })
     call.on('close', () => {
-        vid.parentElement.remove();
+        vid.remove();
         console.log("user disconect")
     })
     peerConnections[id] = call;
